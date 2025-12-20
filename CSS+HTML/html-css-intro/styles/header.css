@@ -3,6 +3,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 100;
+  
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(215, 213, 213);
 }
 
 .left-section {
@@ -105,26 +116,23 @@
   margin: 10px 10px;
 }
 
-.left-options {
-  display: flex;
-  flex-direction: column;
-  width: 150px;
-  margin-top: 5px;
+.notifications-icon-container {
+  position: relative;
 }
 
-.option-info {
-  margin: 15px 10px;
-}
-
-.option-icon {
+.notifications-count {
+  width: 11px;
+  height: 11px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(204, 0, 0);
+  color: white;
+  right: -2px;
+  top: -1px;
   align-items: center;
-  width: 25px;
-  height: 25px;
-  margin: 5px 2px;
-}
-
-.icon-name {
-  text-align: center;
   font-size: 10px;
-  text-align: left;
+  position: absolute;
+  font-family: Roboto, Arial;
+  padding: 1.5px 1.5px;
+  text-align: center;
 }

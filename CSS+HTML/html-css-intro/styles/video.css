@@ -5,6 +5,10 @@
   row-gap: 20px;
 }
 
+.thumbnail-row {
+  position: relative;
+}
+
 .thumbnail {
   width: 100%;
 }
@@ -12,6 +16,7 @@
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
+  margin-top: 7px;
 }
 
 .profile-pic {
@@ -34,4 +39,18 @@
 
 .video-author {
   margin-bottom: 4px;
+}
+
+
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px; 
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 4px;
+  border-radius: 2px;
 }
